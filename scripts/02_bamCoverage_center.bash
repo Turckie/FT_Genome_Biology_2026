@@ -4,7 +4,7 @@
 
 #define paths
 working_directory=$(pwd)
-path_reads=${working_directory}/STAR
+path_reads=${working_directory}/data/STAR
 path_coverage=${working_directory}/results/coverage
 path_alignments=${working_directory}/results/alignments
 
