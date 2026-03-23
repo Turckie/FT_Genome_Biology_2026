@@ -4,8 +4,8 @@
 
 #define paths
 working_directory=$(pwd)
-#path_peaks=${working_directory}/Peaks/MACS3/LOwq_for_IDR
-path_peaks=${working_directory}/Peaks/MACS3/s45
+#path_peaks=${working_directory}/results/Peaks/MACS3/LOwq_for_IDR
+path_peaks=${working_directory}/results/Peaks/MACS3/s45
 path_results=${working_directory}/results/IDR/s45
 
 mkdir -p ${path_results}
