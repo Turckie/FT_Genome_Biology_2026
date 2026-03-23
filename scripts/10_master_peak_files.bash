@@ -1,7 +1,7 @@
 #!/bin/bash
 
 working_directory=$(pwd)
-path_peaks=${working_directory}/Peaks/MACS3
+path_peaks=${working_directory}/results/Peaks/MACS3
 cd ${path_peaks}
 
 #filter the aligned reads to keep only uniquely aligned reads
