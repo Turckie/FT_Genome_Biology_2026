@@ -4,9 +4,9 @@
 
 #define paths
 working_directory=$(pwd)
-#path_alignments=${working_directory}/STAR
-path_alignments=${working_directory}/STAR
-path_peaks=${working_directory}/Peaks/diffMACS3
+#path_alignments=${working_directory}/data/STAR
+path_alignments=${working_directory}/data/STAR
+path_peaks=${working_directory}/results/Peaks/diffMACS3
 
 #make result directory
 mkdir -p ${path_peaks}
