@@ -4,8 +4,8 @@
 #SBATCH --mem-per-cpu=10G
 
 working_directory=$(pwd)
-path_peaks=${working_directory}/Peaks/MACS3
-path_alignments=${working_directory}/STAR
+path_peaks=${working_directory}/results/Peaks/MACS3
+path_alignments=${working_directory}/data/STAR
 path_countmatrix=${working_directory}/results/countmatrix
 mkdir ${path_countmatrix}
 
