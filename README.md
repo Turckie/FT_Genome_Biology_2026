@@ -16,10 +16,9 @@ Scripts used for MOAseq analysis published in  \[comment: insert final link\] **
 
 Two quarto files in the top folder **`Pipeline.qmd:`** and **`DESeq-Analysis.qmd`**.
 
-**`Pipeline.qmd:`** describes Linux commands to run scripts that download raw read data, align them to the Arabidopsis thaliana TAIR10 genome and generate peak predictions, coverage tracks etc. The actual scripts are placed in the folder **`scripts`**. The pipline also includes some analyses that did not end up in the manuscript, such as MOAseq differential peak analysis with MACS3. **`DESeq-Analysis.qmd`** contains commented R commands that were used to take a coverage file from Chr1 and perform a differential peak analysis with DESeq2.
+**`Pipeline.qmd:`** describes Linux commands to run scripts that download raw read data, align them to the Arabidopsis thaliana TAIR10 genome and generate peak predictions, coverage tracks etc. The actual scripts are placed in the folder **`scripts`**. The pipline also includes some analyses that did not end up in the manuscript, such as MOAseq differential peak analysis with MACS3. **`DESeq-Analysis.qmd`** contains commented R commands that were used to take a coverage file from Chr1 and perform a differential peak analysis with DESeq2. The peak coverage data for Chromosome 1 are included in the repository.
 
 The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. To recapitulate the entire pipeline, the sequence reads can be downloaded from there. 
 
-The merged peak results can be downloaded from this repository
-BAM-files aligned to TAIR10: doi10.5281/zenodo.19195981
+
 
