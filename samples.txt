@@ -1,0 +1,9 @@
+bamfiles	Sample	Name
+Ara-5-25Aligned.sortedByCoord.out.bam	5-25_R1	e16_R1
+Ara-5-25_R2Aligned.sortedByCoord.out.bam	5-25_R2	e16_R2
+Ara-6-70Aligned.sortedByCoord.out.bam	6-70_R1	e14_R1
+Ara-6-70_W31Aligned.sortedByCoord.out.bam	6-70_R2	e14_R2
+Ara-9-42Aligned.sortedByCoord.out.bam	9-42_R1	e12_R1
+Ara-9-42_W32Aligned.sortedByCoord.out.bam	9-42_R2	e12_R2
+Ara-Col0Aligned.sortedByCoord.out.bam	Col-0_R1	WT_R1
+Ara-Col0_R2Aligned.sortedByCoord.out.bam	Col-0_R2	WT_R2
