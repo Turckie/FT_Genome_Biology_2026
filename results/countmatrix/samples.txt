@@ -1,0 +1,9 @@
+sample	genotype
+e16_R1	e16
+e16_R2	e16
+e14_R1	e14
+e14_R2	e14
+e12_R1	e12
+e12_R2	e12
+WT_R1	WT
+WT_R2	WT
