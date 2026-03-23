@@ -20,4 +20,6 @@ Two quarto files in the top folder **`Pipeline.qmd:`** and **`DESeq-Analysis.qmd
 
 The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. To recapitulate the entire pipeline, the sequence reads can be downloaded from there. 
 
-Intermediate results required for the analysis (such as the Chr1 coverage tracks) can be downloaded from the following Zenodo repository: 
+The merged peak results can be downloaded from this repository
+BAM-files aligned to TAIR10: doi10.5281/zenodo.19195981
+
