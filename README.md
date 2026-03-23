@@ -18,6 +18,6 @@ Two quarto files in the top folder **`Pipeline.qmd:`** and **`DESeq-Analysis.qmd
 
 **`Pipeline.qmd:`** describes Linux commands to run scripts that download raw read data, align them to the Arabidopsis thaliana TAIR10 genome and generate peak predictions, coverage tracks etc. The actual scripts are placed in the folder **`scripts`**. The pipline also includes some analyses that did not end up in the manuscript, such as MOAseq differential peak analysis with MACS3. **`DESeq-Analysis.qmd`** contains commented R commands that were used to take a coverage file from Chr1 and perform a differential peak analysis with DESeq2.
 
-The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. 
+The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. To recapitulate the entire pipeline, the sequence reads can be downloaded from there. 
 
 Intermediate results required for the analysis (such as the Chr1 coverage tracks) can be downloaded from the following Zenodo repository: 
