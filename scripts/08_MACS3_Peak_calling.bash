@@ -5,8 +5,8 @@
 #define paths
 working_directory=$(pwd)
 #path_alignments=${working_directory}/STAR
-path_alignments=${working_directory}/STAR
-path_peaks=${working_directory}/Peaks/MACS3/LOwq_for_IDR
+path_alignments=${working_directory}/data/STAR
+path_peaks=${working_directory}/results/Peaks/MACS3/LOwq_for_IDR
 
 #make result directory
 mkdir -p ${path_peaks}
