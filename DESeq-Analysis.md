@@ -19,7 +19,8 @@ library(DESeq2)
 
 ## Load count matrix
 
-The count matrix was generated a raw reads from 8 MOA-seq libraries for all fragments of the "Master-list" of MOA-seq enriched regions. Enriched regions were detected by MACS3. Regions commonly detected in two replicates per genotype had been merged using the merge tool from the encode tool idr. The merged lists from 4 genotypes were merged using bedtools and compared to the genotype fragments. Fragments that were detected in at least two genotypes were kept in the master list. Data for Chromosome 1 were extracted and coverage as raw reads bad determined using bedtool coverage.
+The count matrix was generated from raw reads from 8 MOA-seq libraries for all fragments of the "Master-list" of MOA-seq enriched regions. Enriched regions were detected by MACS3. First, regions commonly detected in two replicates per genotype were merged using the merge tool from the Encode tool IDR. The merged lists from 4 genotypes were again merged using bedtools and compared to the genotype fragments. Fragments detected in at least two genotypes were kept in the master list. Data for TAIR10, Chromosome 1 were extracted, and coverage as raw reads was determined using bedtool coverage.
+The coverage file for Chromosome 1 is included in results/countmatrix
 
 ```{r}
 counts <- read.table("results/countmatrix/Chr1_Master_merged_min2_countMatrix_for_import.txt", header=T, row.names=1,sep="\t")
@@ -27,7 +28,7 @@ counts <- read.table("results/countmatrix/Chr1_Master_merged_min2_countMatrix_fo
 #counts2 <- read.table("results/countmatrix/Chr1_in_100bp_countMatrix_for_import.txt", header=T, row.names=1,sep="\t")
 ```
 
-Load Sample to genotype table.
+Load Sample-to-genotype table.
 
 ```{r}
 coldata <- read.table("results/countmatrix/samples.txt", header=T, sep="\t")
@@ -40,7 +41,7 @@ head(coldata)
 
 ## DESeq Analysis
 
-Create a dds object by combining countmatrix and sample table. Genotypes are compared to WT as reference.
+Create a dds object by combining countmatrix and sample table. Genotypes are compared to WT as a reference.
 
 ```{r}
 dds <- DESeqDataSetFromMatrix(
@@ -137,7 +138,7 @@ library(kableExtra)
   kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
 
 ```
-
+Save the supplemental file for the manuscript
 ```{r}
 library(openxlsx)
 
@@ -346,7 +347,7 @@ e16
 
 ```{r}
 library(ggpubr)
-pdf("Peaks/MA_plot_of_Peaks_compact.pdf", width = 4, height = 8) 
+pdf("results/MA_plot_of_Peaks_compact.pdf", width = 4, height = 8) 
 ggarrange(e12,e14,e16, ncol = 1, nrow = 3)
 dev.off()
 
