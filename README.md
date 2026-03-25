@@ -1,5 +1,5 @@
 # FT_Genome_Biology_2026
-Scripts used for MOAseq analysis published in  \[comment: insert final link\] **Cis-regulatory architecture downstream of *FLOWERING LOCUS T* underlies quantitative control of flowering in *Arabidopsis thaliana*** *by* Hao-Ran Zhou (周豪然), Duong Thi Hai Doan, Thomas Hartwig and Franziska Turck, published in Genome Biology (2026).
+Scripts used for MOAseq analysis published in **Cis-regulatory architecture downstream of *FLOWERING LOCUS T* underlies quantitative control of flowering in *Arabidopsis thaliana*** *by* Hao-Ran Zhou (周豪然), Duong Thi Hai Doan, Thomas Hartwig and Franziska Turck, published in Genome Biology (2026).
 # Introduction
 
 **Abstract**
@@ -18,7 +18,9 @@ Two quarto files in the top folder **`Pipeline.qmd:`** and **`DESeq-Analysis.qmd
 
 **`Pipeline.md`** describes Linux commands to run scripts that download raw read data, align them to the Arabidopsis thaliana TAIR10 genome and generate peak predictions, coverage tracks etc. The actual scripts are placed in the folder **`scripts`**. The pipeline also includes some analyses that did not end up in the manuscript, such as MOAseq differential peak analysis with MACS3. **`DESeq-Analysis.md`** contains commented R commands that were used to take a coverage file from Chr1 and perform a differential peak analysis with DESeq2. The peak coverage data for Chromosome 1 are included in the repository.
 
-The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. To recap all, the sequence reads can be downloaded from [there](https://www.ebi.ac.uk/ena/browser/view/ERP180238). 
+The raw MOAseq reads are deposited in the European Nucleotide Archive (ENA) under the accession PRJEB97763. To recap all, the sequence reads can be downloaded from [there](https://www.ebi.ac.uk/ena/browser/view/ERP180238). Make sure to adapt the path in the scripts to the location of the fastq reads. The information in sample.txt may have to be changed to the read accession names.
+
+Intermediate data, such as BAM files mapped to TAIR10, peak prediction and coverage tracks, can be downloaded from the ARC in the **PlantDataHub** repository [FT_Genome_Biology_2026](https://git.nfdi4plants.org/plantchromatin/FT_Genome_Biology_2026)
 
 
 
